@@ -6,10 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Main {
+
+    static final String INPUT_FILE = "input.txt";
+    static final int  NUMBER_OF_PLAYERS = 2;
+
     public static void main(String[] args) throws IOException {
-        String inputFileName = "input.txt";
-        PokerGameService pokerGameService = new PokerGameService(2);
-        File file = new File(inputFileName);
+        PokerGameService pokerGameService = new PokerGameService(NUMBER_OF_PLAYERS);
+        File file = new File(INPUT_FILE);
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;
         while ((st = br.readLine()) != null) {
