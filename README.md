@@ -3,7 +3,7 @@
 ## How to run on intellij
 1. Main.java is the start point of the code, which can be executed in an IDE.
 
-###Assumptions
+### Assumptions
 1. In case of any error or exception the program will skip that line of input and continue to evaluate winners for the remaining
 2. In case of tie same point gets added to the players.
 3. For now the program does not validate if the cards in the input are from the same deck. 
